@@ -1,0 +1,10 @@
+numpy
+opencv-python
+scikit-learn
+streamlit
+Pillow
+numpy
+opencv-python
+scikit-learn
+streamlit
+Pillow

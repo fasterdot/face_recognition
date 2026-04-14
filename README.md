@@ -7,9 +7,27 @@ Ce projet implemente:
 
 ## 1) Installation
 
+### Linux / macOS
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Windows (PowerShell)
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+### Windows (CMD)
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
@@ -18,7 +36,7 @@ pip install -r requirements.txt
 Le dataset est attendu avec 1 dossier par classe:
 `Model/Dependancies/Images/<nom_personne>/*.jpg`
 
-Commande:
+Commande (Linux/macOS/Windows):
 
 ```bash
 python Model/train_face_classifier.py
@@ -44,8 +62,16 @@ Le script utilise le **meme decoupage** train/validation que `train_face_classif
 
 ## 3) Lancer la webapp
 
+Linux / macOS:
+
 ```bash
 streamlit run Webapp/app.py
+```
+
+Windows:
+
+```powershell
+python -m streamlit run Webapp/app.py
 ```
 
 Fonctionnalites:
